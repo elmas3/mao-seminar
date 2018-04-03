@@ -1,5 +1,11 @@
-# 真央ゼミWebサイト
-真央ゼミのWebサイト用リポジトリです。
+# 真央ゼミWebサイトZZZZ
+test大学 真央ゼミのWebサイト用リポジトリです。aaaaaaaa
+
+# メンバ紹介
+* あacddddasddddddd
+* いacd
+* うacdあああああ
+* papa
 
 # ディレクトリ構成
 ```
