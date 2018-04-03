@@ -2,9 +2,9 @@
 test大学 真央ゼミのWebサイト用リポジトリです。aaaaaaaa
 
 # メンバ紹介
-* あac
-* いac
-* うac
+* あacd
+* いacd
+* うacd
 
 # ディレクトリ構成
 ```
