@@ -1,4 +1,4 @@
-# 真央ゼミWebサイト
+# 真央ゼミWebサイトZZZZ
 test大学 真央ゼミのWebサイト用リポジトリです。aaaaaaaa
 
 # メンバ紹介
