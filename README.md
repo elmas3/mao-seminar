@@ -4,7 +4,7 @@ test大学 真央ゼミのWebサイト用リポジトリです。aaaaaaaa
 # メンバ紹介
 * あacddddasddddddd
 * いacd
-* うacd
+* うacdあああああ
 * papa
 
 # ディレクトリ構成
