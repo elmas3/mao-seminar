@@ -1,0 +1,1 @@
+if (confirm) a b c
