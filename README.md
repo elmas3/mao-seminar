@@ -1,6 +1,8 @@
 # 真央ゼミWebサイト
 真央ゼミのWebサイト用リポジトリです。
 
+morita yasuchika
+
 # ディレクトリ構成
 ```
 seminar/
