@@ -1,6 +1,12 @@
 # 真央ゼミWebサイト
 真央ゼミのWebサイト用リポジトリです。
 GitHub Pages機能を使って公開されたページは[こちら](https://elmas3.github.io/mao-seminar/)から閲覧できます。
+
+*メンバー
+魔王教授
+エルメス
+わかば
+
 https://elmas3.github.io/mao-seminar/
 
 # ディレクトリ構成
