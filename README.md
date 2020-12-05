@@ -8,6 +8,7 @@ AAA
 BBB
 CCC
 DDD
+EEE
 
 # ディレクトリ構成
 ```
