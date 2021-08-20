@@ -84,6 +84,20 @@ main a:link,
 main a:visited { text-decoration: none; }
 main a:hover, main a:active  { text-decoration: underline; }
 
+/* 画面外にいる状態 */
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
+
 /* フッター
  -------------------------------------------- */
 footer {
@@ -95,7 +109,7 @@ footer {
 	padding: 6em 0;
 }
 
-	
+
 /* カラム
  -------------------------------------------- */
 .row {
