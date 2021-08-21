@@ -25,9 +25,12 @@ ul, li {
 
 a { text-decoration: none;}
 
+
 img { /* フルードイメージ対応 */
 	max-width: 100%;
+	max-height: 100%;
 	height: auto;
+	
 }
 
 .center { text-align: center; }
@@ -42,12 +45,12 @@ header {
 	text-align: center;
 	color: #FFF;
 }
-header#itempage { 
+header#itempage {
 	padding: 4em 0 2em;
 }
 header nav {
 	background: rgba(0, 0, 0, 0.1) ;
-	padding: 10px 0; 
+	padding: 10px 0;
 	width: 100%;
 	position: absolute;
 	top:0;
@@ -116,7 +119,7 @@ footer {
 	max-width: 930px;
 	margin: 0 auto 50px;
 }
-.row::after { 
+.row::after {
 	content: "";
 	clear: both;
 	display: block;
@@ -206,7 +209,7 @@ main a.button:active { text-decoration: none; }
  ---------------------- */
 @media screen and (max-width: 599px) {
 	.col {
-		float: none; 
+		float: none;
 		margin-left: 0;
 		width: auto;
 	}
