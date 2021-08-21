@@ -36,7 +36,40 @@
     </div>
     <div class="row">
       <div class="center">
-        <p>準備中</p>
+        <div class="content">
+          <a class="js-modal-open" href="" data-target="modal01">今日はよく頑張った人</a><br>
+          <a class="js-modal-open" href="" data-target="modal02">今日頑張れなかった人</a><br>
+          <a class="js-modal-open" href="" data-target="modal03">できなくて悩んでる人</a><br>
+          <a class="js-modal-open" href="" data-target="modal04">どうしても相談したい人</a>
+        </div>
+        <div id="modal01" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doradoryoku.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal02" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doradekinai.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal03" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doranayamu.png">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal04" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/dorasoudan.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
       </div>
     </div>
   </main>
@@ -44,5 +77,22 @@
   <footer>
     <p style="color: white;">kazuya takahashi</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(function(){
+    $('.js-modal-open').each(function(){
+        $(this).on('click',function(){
+            var target = $(this).data('target');
+            var modal = document.getElementById(target);
+            $(modal).fadeIn();
+            return false;
+        });
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
+});
+  </script>
 </body>
 </html>
