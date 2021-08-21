@@ -39,7 +39,7 @@ img { /* フルードイメージ対応 */
 header {
 	width: 100%;
 	padding: 6em 0 4em;
-	background: url("../images/header.jpg") no-repeat fixed center bottom / cover ;
+	background: url("../images/header4.jpg") no-repeat fixed center bottom / cover ;
 	position: relative;
 	text-align: center;
 	color: #FFF;
@@ -108,7 +108,7 @@ main a:hover, main a:active  { text-decoration: underline; }
 /* フッター
  -------------------------------------------- */
 footer {
-	background-color: #01183d;
+	background: url("../images/header4.jpg") no-repeat fixed center bottom / cover;
 	color: #4c6ea4;
 	font-family: "Montserrat",sans-serif;
 	text-align:center;
