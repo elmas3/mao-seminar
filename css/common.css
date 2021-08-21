@@ -103,6 +103,39 @@ main a:hover, main a:active  { text-decoration: underline; }
 	transform : translate(0, 0);
 	}
 
+  .modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.8);
+		display: none;
+	  }
+
+  .bigimg {
+		position: absolute;
+		width: 80%;
+		max-width: 800px;
+		top: 250px;
+		left: 0;
+		right: 0;
+		margin-right: auto;
+		margin-left: auto;
+	  }
+
+  .close-btn {
+		color: #fff;
+		font-size: 40px;
+		position: absolute;
+		right: 20px;
+		top: 0;
+	  }
+
+  .close-btn a {
+		color: #fff;
+		text-decoration: none;
+	  }
 
 
 /* フッター
