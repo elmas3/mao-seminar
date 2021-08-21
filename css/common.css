@@ -267,6 +267,8 @@ main a.button:active { text-decoration: none; }
     width: 30%;
 }
 
+.moji { font-family: "Nico Moji"; }
+
 
 /* ----------------------
  画面の横幅が599px以下の場合に適用
