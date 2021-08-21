@@ -30,7 +30,6 @@ img { /* フルードイメージ対応 */
 	max-width: 100%;
 	max-height: 100%;
 	height: auto;
-	
 }
 
 .center { text-align: center; }
@@ -87,11 +86,15 @@ main a:link,
 main a:visited { text-decoration: none; }
 main a:hover, main a:active  { text-decoration: underline; }
 
+.fadein h2 {
+	margin-top: 50px;
+}
+
 /* 画面外にいる状態 */
 .fadein {
 	opacity : 0.1;
 	transform : translate(0, 50px);
-	transition : all 500ms;
+	transition : all 1000ms;
 	}
 
 /* 画面内に入った状態 */
@@ -99,6 +102,7 @@ main a:hover, main a:active  { text-decoration: underline; }
 	opacity : 1;
 	transform : translate(0, 0);
 	}
+
 
 
 /* フッター
