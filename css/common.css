@@ -44,9 +44,7 @@ header {
 	text-align: center;
 	color: #FFF;
 }
-header#itempage {
-	padding: 4em 0 2em;
-}
+
 header nav {
 	background: rgba(0, 0, 0, 0.1) ;
 	padding: 10px 0;
@@ -208,51 +206,9 @@ table td {
 }
 
 
-form .email,
-form .comment {
-	border: 1px solid #ddd;
-	box-sizing: border-box;
-	display: block;
-	font-size: 16px;
-	margin-bottom: 16px;
-	max-width: 100%;
-	padding: 8px;
-	width: 100%;
-}
-.button {
-	background-color: #f90;
-	border-bottom: medium none;
-	border-radius: 0.5em;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-    font-size: 1.4em;
-	line-height: 1.7;
-	margin: 0 0 2em;
-	padding: .6em 2em;
-	position: relative;
-	text-decoration: none;
-}
-
-main a.button { color: #fff; }
-main a.button:hover,
-main a.button:active { text-decoration: none; }
 
 
-.cartarea {
-	border-top: 1px dotted #CCC;
-	text-align: center;
-}
 
-.price {
-	color: #C00;
-	font-size: 2em;
-}
-
-.content{
-    margin: 0 auto;
-    padding: 40px;
-}
 .modal{
     display: none;
     height: 100vh;
