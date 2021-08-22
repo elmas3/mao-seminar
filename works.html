@@ -14,6 +14,16 @@
 <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/common.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+    .timer {
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+    .timer span {
+      font-size: 72px;
+    }
+    </style>
 </head>
 
 <body>
@@ -26,13 +36,20 @@
       </ul>
 	</nav>
     <h1>WORKS</h1>
-    <p>7月生の活動</p>
+    <section>
+      <p>キミが来てくれた時間：<span id="time"></span></p>
+    </section>
   </header>
 
   <main>
     <div class="row">
       <div class="center">
-        <a href="member.html"><img src="images/dorakan.jpg"></a>
+        <section>
+          <h2>2021年が終わるまで</h2>
+          <p class="timer">あと<span id="day"></span>日<span id="hour"></span>時間<span id="min"></span>分<span id="sec"></span>秒</p>
+        </section>
+        <img id="mypic" onclick="slideshow()" src="images/dorajikan.jpg">
+        <div>↑クリック</div>
       </div>
     </div>
     <div class="row">
@@ -64,7 +81,64 @@
   </main>
 
   <footer>
-    <p style="color: white;">辛いことを知ってる人間のほうが、それだけ人にやさしくできる。それは弱さとは違う。</p>
+    <p style="color: white;">時計の針は元に戻らない。だが、自らの手で進めることはできる。</p>
   </footer>
+  <script>
+    var pics_src = new Array("images/dorajikan.jpg","images/gendou.jpg");
+            var num = 0;
+            function slideshow(){
+                if (num == 1) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    var date = now.getDate();
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var ampm = '';
+    if(hour < 12) {
+      ampm = 'a.m.';
+    } else {
+      ampm = 'p.m.';
+    }
+    var output = year + '/' + (month + 1) + '/' + date + ' ' + (hour % 12) + ':' + min + ampm;
+    document.getElementById('time').textContent = output;
+
+    var countdown = function(due) {
+	var now = new Date();
+
+	var rest = due.getTime() - now.getTime();
+	var sec = Math.floor(rest / 1000) % 60;
+	var min = Math.floor(rest / 1000 / 60) % 60;
+	var hours = Math.floor(rest / 1000 / 60 / 60) % 24;
+	var days = Math.floor(rest / 1000 / 60 / 60 / 24);
+	var count = [days, hours, min, sec];
+
+	return count;
+}
+
+var goal = new Date(2021, 12, 3 );
+
+var recalc = function() {
+	var counter = countdown(goal);
+	document.getElementById('day').textContent = counter[0];
+	document.getElementById('hour').textContent = counter[1];
+	document.getElementById('min').textContent = counter[2];
+	document.getElementById('sec').textContent = counter[3];
+	refresh();
+}
+
+var refresh = function() {
+	setTimeout(recalc, 1000);
+}
+recalc();
+    </script>
 </body>
 </html>
