@@ -137,6 +137,19 @@ main a:hover, main a:active  { text-decoration: underline; }
 		text-decoration: none;
 	  }
 
+	  /*ドラ変化 良い感じの配置にできない・・・ -- */
+	  .dorahenka {
+		position: relative;
+		text-align: center;
+	  }
+	  .dorahenka .active {
+		position: absolute;
+		opacity: 0;
+		transition: 0.5s;
+	  }
+	  .dorahenka:hover .active {
+		opacity: 1;
+	  }
 
 /* フッター
  -------------------------------------------- */
@@ -150,8 +163,7 @@ footer {
 }
 
 
-/* カラム
- -------------------------------------------- */
+
 .row {
 	max-width: 930px;
 	margin: 0 auto 50px;
@@ -170,8 +182,7 @@ footer {
 .quarter {width: 22%;}
 
 
-/* 表の装飾
- -------------------------------------------- */
+
 table {
 	border: 1px solid #ddd;
 	border-collapse: collapse;
@@ -196,8 +207,7 @@ table td {
 	width: 80%;
 }
 
-/* フォーム・ボタンの装飾
- -------------------------------------------- */
+
 form .email,
 form .comment {
 	border: 1px solid #ddd;
@@ -228,8 +238,7 @@ main a.button { color: #fff; }
 main a.button:hover,
 main a.button:active { text-decoration: none; }
 
-/* 商品ページの装飾
- -------------------------------------------- */
+
 .cartarea {
 	border-top: 1px dotted #CCC;
 	text-align: center;
