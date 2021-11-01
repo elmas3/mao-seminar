@@ -68,6 +68,9 @@ header nav ul li a{
 header h1 a {
 	color: #FFF;
 }
+.open {
+	color: #42ee0e;
+}
 
 /* メインエリア
  -------------------------------------------- */
