@@ -68,6 +68,9 @@ header nav ul li a{
 header h1 a {
 	color: #FFF;
 }
+.open {
+	color: #42ee0e;
+}
 
 /* メインエリア
  -------------------------------------------- */
@@ -156,7 +159,7 @@ form .comment {
 	width: 100%;
 }
 .button {
-	background-color: #f90;
+	background-color: rgb(9, 78, 3);
 	border-bottom: medium none;
 	border-radius: 0.5em;
 	color: #fff;
@@ -168,6 +171,9 @@ form .comment {
 	padding: .6em 2em;
 	position: relative;
 	text-decoration: none;
+}
+.button:hover {
+	background: rgb(119, 240, 89);
 }
 
 main a.button { color: #fff; }
