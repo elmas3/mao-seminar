@@ -7,6 +7,7 @@ https://elmas3.github.io/mao-seminar/
 マヨ教授
 エルメス
 わかば
+更新したよ
 
 # ディレクトリ構成
 ```
