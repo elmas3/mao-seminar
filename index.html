@@ -2,63 +2,114 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>真央ゼミWebサイト|C＆R大学</title>
-  <meta name="keywords" content="真央ゼミ,真央一,Git,C＆R大学">
-  <meta name="description" content="C＆R大学 Web研究室 Gitの授業を担当している真央一教授のゼミです。ゼミ生募集中！">
+  <title>トップページ</title>
+  <meta name="keywords" content="プロフィール">
+  <meta name="description" content="kazuya takahashi">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/common.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">TOP</a></li>
-        <li><a href="member.html">MEMBER</a></li>
-        <li><a href="works.html">WORKS</a></li>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="member.html">メンバー</a></li>
+        <li><a href="works.html">活動</a></li>
       </ul>
     </nav>
-    <h1><a href="index.html">真央ゼミナール</a></h1>
-    <p>いざ、古の手動バックアップからGitの世界へ！ゼミ生募集中</p>
+    <h1><a href="index.html">トップページ</a></h1>
+    <p>Gitの本借りたい人いたらお気軽に声かけてくださいませ(('ω')ノ</p>
   </header>
 
   <main>
     <div class="row">
-      <div class="col harf">
-        <h2>NEWS</h2>
-        <p>どなたでも参加可能！オープンゼミ 〜Gitを使ってみよう〜</p>
-        <p>開催日未定</p>
+      <div class="center">
+        <h1 class="moji">ドラえもんに相談してみよう！</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col harf">
-        <a href="member.html"><img src="images/nav_member.jpg"></a>
-      </div>
-      <div class="col harf">
-        <a href="works.html"><img src="images/nav_works.jpg"></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col harf">
-        <a href="http://www.c-r.com/" target="_blank">
-        <img src="images/nav_book.jpg">
-        </a>
-      </div>
-      <div class="col harf">
-        <a href="https://twitter.com/webdesignManga" target="_blank">
-          <img src="images/nav_twitter.jpg">
-        </a>
+      <div class="dorahenka">
+        <img src="images/doraikiru.jpg" width="300" height="300">
+        <img src="images/doraakiramero.jpg" width="400" height="400" class="active">
       </div>
     </div>
     <div class="row">
       <div class="center">
-          <input class="button" onClick="window.open().location.href='https://twitter.com/webdesignManga'" value="ゼミ活動をもっと見る">
+        <div class="content">
+          <h1 class="moji">ねえ、今どんな気持ち？</h1>
+          <a class="js-modal-open" href="" data-target="modal01">今日はよく頑張ったo(^o^)o</a><br><p></p>
+          <a class="js-modal-open" href="" data-target="modal02">今日頑張れなかった(TдT)</a><br><p></p>
+          <a class="js-modal-open" href="" data-target="modal03">めっちゃ悩んでる(-ω-；)ｳｰﾝ</a><br><p></p>
+          <a class="js-modal-open" href="" data-target="modal04">私ってダメなのかな？(ﾉД`)</a><br><p></p>
+          <a class="js-modal-open" href="" data-target="modal05">助けてドラえもんヾ(｡>﹏<｡)ﾉ</a><br><p></p>
+          <a href="https://www.youtube.com/watch?v=tBja9_KM8Q8&t=0s" target="_blank">※元ネタ</a>
+        </div>
+        <div id="modal01" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doradoryoku.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal02" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doradekinai.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal03" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doranayamu.png">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal04" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/doraemon.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal05" class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <img src="images/dorasoudan.jpg">
+              <a class="js-modal-close" href="">閉じる</a>
+          </div><!--modal__inner-->
+        </div><!--modal-->
       </div>
     </div>
   </main>
 
   <footer>
-    <p>本サイトは、書籍「わかばちゃんと学ぶGit使い方入門」の練習用素材です</p>
+    <p style="color: white;">生きる事は楽しい事と辛い事の繰り返し。</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  $(function(){
+    $('.js-modal-open').each(function(){
+        $(this).on('click',function(){
+            var target = $(this).data('target');
+            var modal = document.getElementById(target);
+            $(modal).fadeIn();
+            return false;
+        });
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
+  });
+  </script>
 </body>
 </html>

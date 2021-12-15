@@ -2,57 +2,142 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>ゼミ活動 |真央ゼミ C＆R大学</title>
-  <meta name="keywords" content="ゼミ活動,研究,真央ゼミ">
-  <meta name="description" content="真央ゼミの研究活動・課外活動などをまとめています。">
+  <title>活動記録</title>
+  <meta name="keywords" content="活動記録">
+  <meta name="description" content="7月生の活動などをまとめています。">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/common.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+    .timer {
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+    .timer span {
+      font-size: 72px;
+    }
+    </style>
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">TOP</a></li>
-        <li><a href="member.html">MEMBER</a></li>
-        <li><a href="works.html">WORKS</a></li>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="member.html">メンバー</a></li>
+        <li><a href="works.html">活動</a></li>
       </ul>
 	</nav>
-    <h1>WORKS</h1>
-    <p>真央ゼミの活動</p>
+    <h1>活動</h1>
+    <section>
+      <p>キミが来てくれた時間：<span id="time"></span></p>
+    </section>
   </header>
 
-  <main>    
+  <main>
     <div class="row">
-      <h2>研究活動</h2>
+      <div class="center">
+        <section>
+          <h2>2021年が終わるまで</h2>
+          <p class="timer">あと<span id="day"></span>日<span id="hour"></span>時間<span id="min"></span>分<span id="sec"></span>秒</p>
+        </section>
+        <img id="mypic" onclick="slideshow()" src="images/dorajikan.jpg">
+        <div>↑クリック</div>
+      </div>
+    </div>
+    <div class="row">
+      <h2>準備中</h2>
       <table>
         <tbody>
           <tr>
-            <th>ゼミナールⅡ研究課題</th>
-            <td><a href="http://www.c-r.com/book/detail/1075" target="_blank">わかばちゃんと学ぶWebサイト制作の基本</a></td>
+            <th>準備中</th>
+            <td>準備中</td>
           </tr>
           <tr>
-            <th>ゼミナールⅠ研究課題</th>
-            <td>わかばちゃんと学ぶGit使い方入門</td>
-          </tr>    
+            <th>準備中</th>
+            <td>準備中</td>
+          </tr>
         </tbody>
       </table>
     </div>
     <div class="row">
-      <h2>課外活動</h2>
+      <h2>準備中</h2>
       <table>
         <tbody>
           <tr>
-            <th>オフィス訪問</th>
-            <td><a href="https://codeiq.jp/magazine/category/wakaba_office_2/" target="_blank">わかばちゃんが行くオフィス訪問マンガ</a></td>
-          </tr>  
+            <th>準備中</th>
+            <td>準備中</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </main>
 
   <footer>
-    <p>本サイトは、書籍「わかばちゃんと学ぶGit使い方入門」の練習用素材です</p>
+    <p style="color: white;">時計の針は元に戻らない。だが、自らの手で進めることはできる。</p>
   </footer>
+  <script>
+    var pics_src = new Array("images/dorajikan.jpg","images/gendou.jpg");
+            var num = 0;
+            function slideshow(){
+                if (num == 1) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    var date = now.getDate();
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var ampm = '';
+    if(hour < 12) {
+      ampm = 'a.m.';
+    } else {
+      ampm = 'p.m.';
+    }
+    var output = year + '/' + (month + 1) + '/' + date + ' ' + (hour % 12) + ':' + min + ampm;
+    document.getElementById('time').textContent = output;
+
+    var countdown = function(due) {
+	var now = new Date();
+
+	var rest = due.getTime() - now.getTime();
+	var sec = Math.floor(rest / 1000) % 60;
+	var min = Math.floor(rest / 1000 / 60) % 60;
+	var hours = Math.floor(rest / 1000 / 60 / 60) % 24;
+	var days = Math.floor(rest / 1000 / 60 / 60 / 24);
+	var count = [days, hours, min, sec];
+
+	return count;
+}
+
+var goal = new Date(2021, 12, 3 );
+
+var recalc = function() {
+	var counter = countdown(goal);
+	document.getElementById('day').textContent = counter[0];
+	document.getElementById('hour').textContent = counter[1];
+	document.getElementById('min').textContent = counter[2];
+	document.getElementById('sec').textContent = counter[3];
+	refresh();
+}
+
+var refresh = function() {
+	setTimeout(recalc, 1000);
+}
+recalc();
+    </script>
 </body>
 </html>
