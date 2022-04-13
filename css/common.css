@@ -173,7 +173,13 @@ form .comment {
 main a.button { color: #fff; }
 main a.button:hover,
 main a.button:active { text-decoration: none; }
-
+.button{
+	transition:0.3s;
+}
+.button:hover{
+	opacity:0.7;
+	transition:0.3s;
+}
 /* 商品ページの装飾
  -------------------------------------------- */
 .cartarea {
