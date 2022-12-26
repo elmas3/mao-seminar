@@ -8,6 +8,9 @@ https://elmas3.github.io/mao-seminar/
 エルマス
 わかば
 
+＃プッシュ
+　確認
+
 # ディレクトリ構成
 ```
 seminar/
