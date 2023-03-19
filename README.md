@@ -8,6 +8,9 @@ https://elmas3.github.io/mao-seminar/
 エルマス
 わかば
 
+# メンバーの年齢を追加
+43, 3, 22
+
 # ディレクトリ構成
 ```
 seminar/
