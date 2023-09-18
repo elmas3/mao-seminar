@@ -6,7 +6,7 @@ https://elmas3.github.io/mao-seminar/
 #メンバー
 魔王教授
 エルマス
-わかば
+わかばちゃん
 
 # ディレクトリ構成
 ```
