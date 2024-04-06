@@ -2,14 +2,14 @@
 真央ゼミのWebサイト用リポジトリです。
 GitHub Pages機能を使って公開されたページは[こちら](https://elmas3.github.io/mao-seminar/)から閲覧できます。
 https://elmas3.github.io/mao-seminar/
-
+wakabatyan
 # ディレクトリ構成
 ```
 seminar/
 ├─ index.html        # トップページ
 ├─ member.html       # メンバー紹介ページ
 ├─ work.html         # ゼミ活動紹介ページ
-├─ README.md
+├─ README.md         # test
 ├─ images
 └─ css/
     └─ common.css
