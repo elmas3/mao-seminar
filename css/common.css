@@ -25,8 +25,10 @@ ul, li {
 
 a { text-decoration: none;}
 
+
 img { /* フルードイメージ対応 */
 	max-width: 100%;
+	max-height: 100%;
 	height: auto;
 }
 
@@ -37,17 +39,15 @@ img { /* フルードイメージ対応 */
 header {
 	width: 100%;
 	padding: 6em 0 4em;
-	background: url("../images/header.jpg") no-repeat fixed center bottom / cover ;
+	background: url("../images/header4.jpg") no-repeat fixed center bottom / cover ;
 	position: relative;
 	text-align: center;
 	color: #FFF;
 }
-header#itempage { 
-	padding: 4em 0 2em;
-}
+
 header nav {
 	background: rgba(0, 0, 0, 0.1) ;
-	padding: 10px 0; 
+	padding: 10px 0;
 	width: 100%;
 	position: absolute;
 	top:0;
@@ -84,10 +84,75 @@ main a:link,
 main a:visited { text-decoration: none; }
 main a:hover, main a:active  { text-decoration: underline; }
 
+.fadein h2 {
+	margin-top: 50px;
+}
+
+/* 画面外にいる状態 */
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 1000ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
+  .modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.8);
+		display: none;
+	  }
+
+  .bigimg {
+		position: absolute;
+		width: 80%;
+		max-width: 800px;
+		top: 250px;
+		left: 0;
+		right: 0;
+		margin-right: auto;
+		margin-left: auto;
+	  }
+
+  .close-btn {
+		color: #fff;
+		font-size: 40px;
+		position: absolute;
+		right: 20px;
+		top: 0;
+	  }
+
+  .close-btn a {
+		color: #fff;
+		text-decoration: none;
+	  }
+
+	  /*ドラ変化 良い感じの配置にできない・・・ -- */
+	  .dorahenka {
+		position: relative;
+		text-align: center;
+	  }
+	  .dorahenka .active {
+		position: absolute;
+		opacity: 0;
+		transition: 0.5s;
+	  }
+	  .dorahenka:hover .active {
+		opacity: 1;
+	  }
+
 /* フッター
  -------------------------------------------- */
 footer {
-	background-color: #01183d;
+	background: url("../images/header4.jpg") no-repeat fixed center bottom / cover;
 	color: #4c6ea4;
 	font-family: "Montserrat",sans-serif;
 	text-align:center;
@@ -95,14 +160,13 @@ footer {
 	padding: 6em 0;
 }
 
-	
-/* カラム
- -------------------------------------------- */
+
+
 .row {
 	max-width: 930px;
 	margin: 0 auto 50px;
 }
-.row::after { 
+.row::after {
 	content: "";
 	clear: both;
 	display: block;
@@ -116,8 +180,7 @@ footer {
 .quarter {width: 22%;}
 
 
-/* 表の装飾
- -------------------------------------------- */
+
 table {
 	border: 1px solid #ddd;
 	border-collapse: collapse;
@@ -142,49 +205,34 @@ table td {
 	width: 80%;
 }
 
-/* フォーム・ボタンの装飾
- -------------------------------------------- */
-form .email,
-form .comment {
-	border: 1px solid #ddd;
-	box-sizing: border-box;
-	display: block;
-	font-size: 16px;
-	margin-bottom: 16px;
-	max-width: 100%;
-	padding: 8px;
-	width: 100%;
+
+
+
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-.button {
-	background-color: #f90;
-	border-bottom: medium none;
-	border-radius: 0.5em;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-    font-size: 1.4em;
-	line-height: 1.7;
-	margin: 0 0 2em;
-	padding: .6em 2em;
-	position: relative;
-	text-decoration: none;
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
 }
 
-main a.button { color: #fff; }
-main a.button:hover,
-main a.button:active { text-decoration: none; }
-
-/* 商品ページの装飾
- -------------------------------------------- */
-.cartarea {
-	border-top: 1px dotted #CCC;
-	text-align: center;
-}
-
-.price {
-	color: #C00;
-	font-size: 2em;
-}
+.moji { font-family: "Nico Moji"; }
 
 
 /* ----------------------
@@ -192,7 +240,7 @@ main a.button:active { text-decoration: none; }
  ---------------------- */
 @media screen and (max-width: 599px) {
 	.col {
-		float: none; 
+		float: none;
 		margin-left: 0;
 		width: auto;
 	}
